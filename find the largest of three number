@@ -1,20 +1,32 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-    int num1,num2,num3;
-    cin>>num1>>num2>>num3;
-    if (num1>num2 && num1>num3)
+    int a,b,c;
+
+    cout<<"Enter value of a,b,c"<<endl;
+
+    cin>>a>>b>>c;
+
+    if (a>b && a>c)
     {
-        cout<<num1<<" : "<<"is the largest number";
+        cout<<"The largest number of = "<<a<<endl;
     }
-    if (num2>num3 && num2>num1)
+    else if (b>c && b>a)
     {
-        cout<<num2<<" : "<<"is the largest number";
+        cout<<"The largest number of = "<<b<<endl;
     }
-    if (num3>num1 && num3>num2)
+    else if (c>a && c>b)
     {
-        cout<<num3<<" : "<<"is the largest number";
+        cout<<"The largest number of = "<<c<<endl;
     }
-    return 0;
+    else if (a==b && a==c)
+    {
+        cout<<"The number are equal"<<endl;
+    }
+    else
+    {
+        cout<<"No largest number"<<endl;
+    }
     
+    return 0;
 }
